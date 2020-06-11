@@ -1,5 +1,5 @@
 module.exports = {
-    base: '/cby2566.github.io/',
+    base: '/coco/',
     title: 'OLD two-dimension',
     description: 'a old two-dimension',
     

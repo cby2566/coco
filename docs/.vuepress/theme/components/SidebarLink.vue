@@ -131,11 +131,3 @@ a.sidebar-link
     &.active
       font-weight 500
 </style>
-<style lang="stylus">
-  .sidebar-link{
-    color: aqua !important;
-    :hover {
-      color:red;
-    }
-  }
-</style>
