@@ -1,5 +1,5 @@
 module.exports = {
-    base: '/cby2566.github.io/',
+    base: '/coco/',
     title: 'OLD two-dimension',
     description: 'a old two-dimension',
     
@@ -22,9 +22,21 @@ module.exports = {
         sidebar: [
             ['/', '首页'],
             ['/blog/FirstBlog.md', '我的第一篇博客'],
-            '/page-a/a1.md',
+            '/page-b/b1.md',
+            {
+                title: 'Group 2',
+                children: [ '/page-a/a1.md','/page-a/a2.md' ]
+            }
         ],
         //配置侧栏end
+        //最后更新时间
+        themeConfig: {
+            lastUpdated: 'Last Updated', // string | boolean
+        },
+        //end
+        serviceWorker: {
+            updatePopup: true
+        }
     }
   }
 
