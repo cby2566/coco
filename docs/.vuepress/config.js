@@ -7,15 +7,15 @@ module.exports = {
         //配置导航
         nav: [
           { text: 'Home', link: '/' },
-          { text: 'Guide', link: '/guide/' },
-          { text: 'External', link: 'https://google.com' },
-          { 
-            text: 'Languages',
-            items: [
-                    { text: 'Chinese', link: '/language/chinese' },
-                    { text: 'Japanese', link: '/language/japanese' }
-                ]
-            }
+        //   { text: 'Guide', link: '/guide/' }, 不显示git链接
+        //   { text: 'External', link: 'https://google.com' }, 不显示外部链接
+        //   { 
+        //     text: 'Languages',
+        //     items: [
+        //             { text: 'Chinese', link: '/language/chinese' },
+        //             { text: 'Japanese', link: '/language/japanese' }
+        //         ]
+        //     }
         ],
         //配置导航 end
         //配置侧栏
@@ -26,7 +26,8 @@ module.exports = {
             {
                 title: 'Group 2',
                 children: [ '/page-a/a1.md','/page-a/a2.md' ]
-            }
+            },
+            ['/page-c/关于博客.md', '和博客相关'],
         ],
         //配置侧栏end
         //最后更新时间
