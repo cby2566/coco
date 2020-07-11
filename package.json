@@ -1,9 +1,12 @@
 {
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "dev": "npm run docs:dev"
   },
   "devDependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.2",
     "vuepress": "^1.5.1"
   }
 }

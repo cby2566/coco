@@ -28,8 +28,17 @@ module.exports = {
                 children: [ '/page-a/a1.md','/page-a/a2.md' ]
             },
             ['/page-c/关于博客.md', '和博客相关'],
+            {
+                title: '七月学习',
+                children: [ ['/seven/seven.md','711'] ]
+            },
         ],
         //配置侧栏end
+        // >>搜索框
+        themeConfig: {
+            search: false,
+            searchMaxSuggestions: 10
+        },
         //最后更新时间
         themeConfig: {
             lastUpdated: 'Last Updated', // string | boolean
