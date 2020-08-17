@@ -1,5 +1,5 @@
 ---
-home: true
+#home: true
 heroImage: /vue-logo.jpg
 heroText: blog-demo
 tagline: 博客示例
