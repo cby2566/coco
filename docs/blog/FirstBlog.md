@@ -1,4 +1,3 @@
 start vuepress
 ---
-pageClass: custom-page-class
----
+{{ 'pageClass: custom-page-class' }}

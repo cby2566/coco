@@ -9,6 +9,9 @@
       v-for="(value,index) in list" 
       :key="index"
       v-model="list[index]"
+      :index="index"
+      @deleteCell="deleteCell"
+      @editCell="editCell"
        >
       </cell>
     </div>
@@ -21,7 +24,7 @@ export default {
     return {
       list: [
         {
-          text: "测试文本",
+          text: "测试文本，点击修改",
           selectA: true
         }
       ],
@@ -38,6 +41,13 @@ export default {
                 text: this.tempText,
                 selectA: false  
             })
+      },
+      deleteCell(index) {
+        // if( !index ) return;
+        this.list.splice(index, 1);
+      },
+      editCell( arr ) {
+        this.list.splice(arr[0], 1, arr[1]);
       }
   },
 };

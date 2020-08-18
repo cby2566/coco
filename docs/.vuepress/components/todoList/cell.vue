@@ -4,9 +4,13 @@
         <div>
             <input type="checkbox" v-bind:checked="value.selectA">
         </div>
-        <div>{{value.text}}</div>
         <div>
-            <input type="button" value="删除" @click="deleCell">
+            <div v-if="!isEdit" @click="editClick">{{value.text}}</div>
+            <input v-else type="text" @blur="editClick" v-model="value.text">
+        </div>
+        <div>
+            <!-- <input type="button" value="完成" @click="editCell"> -->
+            <input type="button" value="删除" @click="deleteCell">
         </div>
     </div>
 </div>
@@ -20,24 +24,31 @@ export default {
             default: function() {
                 return {
                     text: "测试文本2",
-                    selectA: true
+                    selectA: true,
                 }
             }
+        },
+        index: {
+            default: 0
         }
     },
     data() {
         return {
             nx: 1,
+            isEdit: false,
         }
-    },
-    model: {
-        prop: 'value',
-        event: 'change'
     },
     methods: {
-        deleCell() {
-            this.$emit( 'change', this.nx++ )
-        }
+        deleteCell() {
+            this.$emit( 'deleteCell', this.index );
+        },
+        editClick(){
+            this.isEdit = !this.isEdit;
+        },
+        editCell() {
+            // this.$emit( 'editCell', [this.index, this.value] )
+        },
+        
     },
 }
 </script>
