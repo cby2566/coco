@@ -30,7 +30,10 @@ module.exports = {
             ['/page-c/关于博客.md', '和博客相关'],
             {
                 title: '七月学习',
-                children: [ ['/seven/seven.md','711'] ]
+                children: [ 
+                    ['/seven/seven.md','711'],
+                    ['/seven/position_sticky.md','粘性布局']
+                ]
             },
         ],
         //配置侧栏end

@@ -17,3 +17,4 @@ git commit -m 'deploy'
 #git push -f https://github.com/cby2566/cby2566.github.io.git master:master
 git push -f https://github.com/cby2566/coco.git master:gh-pages
 cd -
+#直接运行该文件就行了
