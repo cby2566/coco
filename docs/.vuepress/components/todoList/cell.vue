@@ -1,11 +1,14 @@
 <template>
 <div>
     <div class="cell1">
+        <!-- <div>&lt;a href=&quot;&quot; &gt;777&lt;/a&gt;</div> -->
+        &lt;div&gt;&lt;a href=&quot;&quot; &gt;777&lt;/a&gt;&lt;/div&gt;
         <div>
             <input type="checkbox" v-bind:checked="value.selectA">
         </div>
         <div>
             <div v-if="!isEdit" @click="editClick">{{value.text}}</div>
+            <!-- <a v-if="!isEdit" @click="editClick" :href="value.text">{{value.text}}</a> -->
             <input v-else type="text" @blur="editClick" v-model="value.text">
         </div>
         <div>

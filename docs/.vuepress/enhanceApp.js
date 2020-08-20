@@ -5,4 +5,8 @@ export default ({
     siteData // 网站元数据
   }) => {
     // ...使用应用程序级别的增强功能
+    // console.log('enhanceApp.js');
+    // console.log('options:',options)
+    // console.log('router:',router)
+    // console.log('siteData:',siteData)
   }
