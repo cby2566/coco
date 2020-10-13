@@ -70,4 +70,6 @@ height和width比较明显的区别就是对百分比单位的支持。对于wid
     Specifies a percentage height. The percentage is calculated with respect to the height of the generated box's containing block. If the height of the containing block is not specified explicitly (i.e., it depends on content height), and this element is not absolutely positioned, the used height is calculated as if 'auto' was specified.
 大概意思就是，如果那个盒子没有显式在指定（就是高度是内容撑开的），也不是绝对定位，那么计算值就为auto。  
 `'auto' * 100/100 = NaN`
-然而宽度width的解释就和这个不一样，具体去文档里看吧。
+然而宽度width的解释就和这个不一样，具体去文档里看吧。  
+
+需要注意的是当父盒子为relative，且有设置高度属性和padding值。子盒子为absolute，且使用height：100%;会导致子盒子超出父盒子的宽度。
