@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>OLD two-dimension</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="a old two-dimension">
+    
+    <link rel="preload" href="/coco/assets/css/0.styles.aa84d7fd.css" as="style"><link rel="preload" href="/coco/assets/js/app.515a2de7.js" as="script"><link rel="preload" href="/coco/assets/js/2.5c143785.js" as="script"><link rel="preload" href="/coco/assets/js/15.f64f3e3d.js" as="script"><link rel="prefetch" href="/coco/assets/js/10.29c74e59.js"><link rel="prefetch" href="/coco/assets/js/11.3bfb9bbc.js"><link rel="prefetch" href="/coco/assets/js/12.ab48fa21.js"><link rel="prefetch" href="/coco/assets/js/13.9f55bcad.js"><link rel="prefetch" href="/coco/assets/js/14.18fabb92.js"><link rel="prefetch" href="/coco/assets/js/16.5130b8d9.js"><link rel="prefetch" href="/coco/assets/js/17.2b307cf3.js"><link rel="prefetch" href="/coco/assets/js/18.ab6ba725.js"><link rel="prefetch" href="/coco/assets/js/19.fa00b142.js"><link rel="prefetch" href="/coco/assets/js/20.ce43c3c9.js"><link rel="prefetch" href="/coco/assets/js/21.e8392154.js"><link rel="prefetch" href="/coco/assets/js/22.37889ebf.js"><link rel="prefetch" href="/coco/assets/js/3.a44c4e3a.js"><link rel="prefetch" href="/coco/assets/js/4.4595a74f.js"><link rel="prefetch" href="/coco/assets/js/5.76791cc3.js"><link rel="prefetch" href="/coco/assets/js/6.6e0b3ff9.js"><link rel="prefetch" href="/coco/assets/js/7.9a7c81c2.js"><link rel="prefetch" href="/coco/assets/js/8.1aaab3dc.js"><link rel="prefetch" href="/coco/assets/js/9.feb923da.js">
+    <link rel="stylesheet" href="/coco/assets/css/0.styles.aa84d7fd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/coco/" class="home-link router-link-active"><!----> <span class="site-name">OLD two-dimension</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/coco/" class="nav-link">
+  Home
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/coco/" class="nav-link">
+  Home
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/coco/" aria-current="page" class="sidebar-link">首页</a></li><li><a href="/coco/blog/FirstBlog.html" class="sidebar-link">我的第一篇博客</a></li><li><a href="/coco/page-b/b1.html" class="sidebar-link">/page-b/b1.html</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Group 2</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/coco/page-c/关于博客.html" class="active sidebar-link">和博客相关</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/coco/page-c/关于博客.html#关于-vuepress-博客" class="sidebar-link">关于 VuePress 博客</a></li></ul></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>七月学习</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="关于-vuepress-博客"><a href="#关于-vuepress-博客" class="header-anchor">#</a> 关于 VuePress 博客</h2> <ul><li><strong>启动和开始写作</strong><br>
+拉取代码，使用<code>npm run doc:dev</code> 在docs目录下新建markdown文件就可以直接写了。启动的dev服务器也是支持热更新，所以这是最快的方式。
+<ul><li>但是修改了config.js就需要重启dev服务器。</li></ul></li></ul> <hr> <ul><li><strong>部署和发布</strong><br>
+运行根目录下的deploy.sh文件。</li></ul> <hr> <ul><li><strong>侧栏</strong><br>
+需要在.vuepress目录下的config.js 文件中进行配置sidebar属性。支持字符串、数组和对象，写法和vue router一样，也是可以使用子路由和嵌套路由，对文章进行分类。
+值得注意的是：
+<ul><li>使用字符串作为参数的时候，字符串就需要是url路径，而在侧栏显示的也是url路径。</li> <li>使用数组时，第一项就是路径，第二项就是title名称，类似于别名。那么显示的时候也是显示title。</li> <li>使用对象时，作用于分组。title属性为分组名称。children属性是子路由，命名规则和上述的两项类似。</li></ul></li></ul> <hr> <ul><li><strong>组件</strong><br>
+在md中使用组件是需要注意，当你的组件是层级比较深的时候，和普通vue不同的是在标签使用的时候需要用 - 隔开，否则无法使用。因为在components目录下创建的组件都被 VuePress 创建了全局组件，但是创建的时候是根据目录结构来区分不同组件的。<br>
+可以使用预编译CSS来进行编写，直接<code>npm install --save-dev sass-loader node-sass</code>进行安装。</li> <li><strong>一些问题</strong><br>
+.vuepress/components目录下新建文件夹时，需要注意文件名的命名规则。
+当前主题使用的是vuepress框架默认主题，进入 .vuepress/theme 目录下可以修改其组件和样式。</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/coco/page-a/a2.html" class="prev">
+        /page-a/a2.html
+      </a></span> <span class="next"><a href="/coco/seven/seven.html">
+        711
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/coco/assets/js/app.515a2de7.js" defer></script><script src="/coco/assets/js/2.5c143785.js" defer></script><script src="/coco/assets/js/15.f64f3e3d.js" defer></script>
+  </body>
+</html>
